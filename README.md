@@ -18,7 +18,7 @@
 | テーマ | 気象データの API サービス「WxTech」を使ったビジネスモデルやアプリの開発 |
 | 作成期間 | 2021年9月25日〜26日（2022年1月に、パッケージを更新） |
 | イベントのページ | [【賞金総額100万円】士業×IT ハッカソン Vol.1（connpass）](https://sigyo-it.connpass.com/event/217882/) |
-| チーム | PichiPichi Ichinensei（3人） |
+| チーム | PichiPichi Ichinensei（デザイナーを含む4人） |
 | 構成 | Next.js、React、TypeScript、styled-components、Storybook |
 
 ## ディレクトリ構成
