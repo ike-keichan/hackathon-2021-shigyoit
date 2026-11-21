@@ -1,34 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# hackathon-2021-shigyoit
 
-## Getting Started
+2021年9月のハッカソンで作った Web アプリ「てんきぶんっ！」の画面。
 
-First, run the development server:
+> 当時の記録として残しているリポジトリです。プログラムは当時のままで、リファクタリングや修正は行っていません。
 
-```bash
-npm run dev
-# or
-yarn dev
+## 概要
+
+「てんきぶんっ！」は、天気から「あの人」のその日の気分を予想して見せる Web アプリである。総合指数、気分指数、仕事指数、天気痛指数の4つを、星の数で表示する。
+
+このリポジトリには、画面（フロントエンド）だけが入っている。表示している文章と指数は、プログラムに直接書いた見本の値である。
+
+| 項目 | 内容 |
+| --- | --- |
+| 作成期間 | 2021年9月25日〜26日（2022年1月に、パッケージを更新） |
+| チーム | PichiPichi Ichinensei（3人） |
+| 構成 | Next.js、React、TypeScript、styled-components、Storybook |
+
+## ディレクトリ構成
+
+| ディレクトリ | 内容 |
+| --- | --- |
+| `src/pages/` | ページ。トップページの1つだけ |
+| `src/components/` | 部品。小さい順に `atoms/`、`molecules/`、`organisms/`、`templates/` に分けている。部品ごとに、本体（`index.tsx`）と Storybook 用の見本（`stories.tsx`）がある |
+| `src/styles/` | 色と、全体に適用するスタイル |
+| `src/shared/` | 共通の型と画像 |
+| `public/` | ロゴ、アイコン、見本の画像 |
+| `.storybook/` | Storybook の設定 |
+
+## 実行環境
+
+| ソフトウェア | バージョン | 用途 |
+| --- | --- | --- |
+| Node.js | 16 | 実行と、パッケージの管理 |
+| Next.js | 12.0.7 | Web アプリの枠組み |
+| React | 17.0.2 | 画面の部品 |
+
+Next.js と React のバージョンは、`package.json` の記録による。Node.js は、作成した時期の長期サポート版である。
+
+## セットアップ
+
+```sh
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 実行方法
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```sh
+npm run dev
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Web ブラウザで <http://localhost:3000> を開く。
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+部品の一覧は、Storybook で見られる。
 
-## Learn More
+```sh
+npm run storybook
+```
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Web ブラウザで <http://localhost:6006> を開く。
