@@ -11,7 +11,7 @@
 | イベント | 【賞金総額100万円】士業×IT ハッカソン Vol.1 |
 | 開催時期 | 2021年9月25日〜26日（オンライン） |
 | 主催 | SIGYOIT（共催：株式会社ウェザーニューズ） |
-| チーム | PichiPichi Ichinensei（デザイナーを含む4人） |
+| チーム | PichiPichi Ichinensei（4人） |
 | 担当 | 画面（フロントエンド）のプログラム |
 | 言語 | TypeScript |
 | イベントのページ | [【賞金総額100万円】士業×IT ハッカソン Vol.1（connpass）](https://sigyo-it.connpass.com/event/217882/) |
